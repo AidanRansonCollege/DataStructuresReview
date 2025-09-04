@@ -81,3 +81,14 @@ void LinkedList::ReverseIterative() {
 	head = prev;
 
 }
+
+void LinkedList::ReverseRecursion(Node* p) {
+	if (p == NULL) {
+		this->head = p;
+		return;
+	}
+	ReverseRecursion(p->next);
+	Node* q = p->next;
+	q->next = p;
+	p->next = nullptr;
+}

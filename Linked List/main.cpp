@@ -36,6 +36,11 @@ int main() {
 	list.ReverseIterative();
 	list.Print();
 
+	cout << "Setting back to normal: " << endl;
+	list.ReverseRecursion();
+	cout << "SIKE" << endl;
+	list.Print();
+
 	return 0;
 }
 

@@ -16,5 +16,6 @@ public:
 	void Print();
 	void Remove(int);
 	void ReverseIterative();
+	void ReverseRecursion(Node*);
 };
 
